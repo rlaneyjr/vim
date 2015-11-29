@@ -1,0 +1,100 @@
+let g:user_emmet_expandabbr_key = '<c-e>',V
+emmet https://github.com/vim-scripts/Emmet.vim,V
+yankring https://github.com/vim-scripts/YankRing.vim,V
+ZenCodin,v
+g,v
+" Enable all functions in all modeslet g:user_zen_mode='a',V
+,V
+""""""""""""""""""""""""""""""" => MRU plugin""""""""""""""""""""""""""""""let MRU_Max_Entries = 400map <leader>f :MRU<CR>,V
+set_tabline https://github.com/vim-scripts/TabLineSet.vim,V
+mru https://github.com/vim-scripts/mru.vim,V
+https://github.com/vim-scripts/Emmet.vim.git,v
+https://github.com/vim-scripts/YankRing.vim.git,v
+-forked ,v
+https://github.com/wesgibbs/vim-irblack.git,v
+https://github.com/vim-scripts/TabLineSet.vim.git,v
+https://github.com/vim-scripts/peaksea.git,v
+https://github.com/vim-scripts/mru.vim.git,v
+rwxr-xr-x  48 rlaney  staff   1.6K Sep 20 14:43 .drwxr-xr-x  15 rlaney  staff   510B Sep 13 12:11 ..drwxr-xr-x   8 rlaney  staff   272B Sep 20 14:43 ack.vimdrwxr-xr-x   8 rlaney  staff   272B Sep 20 14:43 ag.vimdrwxr-xr-x   8 rlaney  staff   272B Sep 20 14:43 base16-vimdrwxr-xr-x   5 rlaney  staff   170B Sep 20 14:43 bufexplorerdrwxr-xr-x   7 rlaney  staff   238B Sep 20 14:43 ctrlp.vimdrwxr-xr-x   4 rlaney  staff   136B Sep 20 14:43 goyo.vimdrwxr-xr-x   8 rlaney  staff   272B Sep 20 14:43 gruvboxdrwxr-xr-x   4 rlaney  staff   136B Sep 20 14:43 mayansmokedrwxrwxrwx   4 rlaney  staff   136B Sep 10 15:41 mrudrwxr-xr-x  10 rlaney  staff   340B Sep 20 14:43 nerdtreedrwxr-xr-x   4 rlaney  staff   136B Sep 20 14:43 nginx.vimdrwxr-xr-x   3 rlaney  staff   102B Sep 20 14:43 open_file_under_cursor.vimdrwxrwxrwx   3 rlaney  staff   102B Sep 10 15:41 peakseadrwxr-xr-x  25 rlaney  staff   850B Sep 20 14:43 python-modedrwxrwxrwx  25 rlaney  staff   850B Sep 10 15:41 python-mode-developdrwxrwxrwx   3 rlaney  staff   102B Sep 10 15:41 set_tablinedrwxr-xr-x  30 rlaney  staff   1.0K Sep 20 14:43 snipmate-snippetsdrwxr-xr-x  11 rlaney  staff   374B Sep 20 14:43 syntasticdrwxr-xr-x   7 rlaney  staff   238B Sep 20 14:43 tlibdrwxr-xr-x   6 rlaney  staff   204B Sep 20 14:43 vim-addon-mw-utilsdrwxr-xr-x  12 rlaney  staff   408B Sep 20 14:43 vim-airlinedrwxr-xr-x   7 rlaney  staff   238B Sep 20 14:43 vim-bundle-makodrwxr-xr-x  18 rlaney  staff   612B Sep 20 14:43 vim-coffee-scriptdrwxr-xr-x   7 rlaney  staff   238B Sep 20 14:43 vim-colors-solarizeddrwxr-xr-x   7 rlaney  staff   238B Sep 20 14:43 vim-commentarydrwxr-xr-x   8 rlaney  staff   272B Sep 20 14:43 vim-expand-regiondrwxr-xr-x   7 rlaney  staff   238B Sep 20 14:43 vim-fugitivedrwxr-xr-x   9 rlaney  staff   306B Sep 20 14:43 vim-gitgutterdrwxr-xr-x  16 rlaney  staff   544B Sep 20 14:43 vim-godrwxr-xr-x   5 rlaney  staff   170B Sep 20 14:43 vim-indent-objectdrwxrwxrwx   4 rlaney  staff   136B Sep 10 15:41 vim-irblack-forkeddrwxr-xr-x  10 rlaney  staff   340B Sep 20 14:43 vim-lessdrwxr-xr-x   6 rlaney  staff   204B Sep 20 14:43 vim-markdowndrwxr-xr-x  16 rlaney  staff   544B Sep 20 14:43 vim-multiple-cursorsdrwxrwxrwx   5 rlaney  staff   170B Sep 10 15:41 vim-peepopendrwxr-xr-x   4 rlaney  staff   136B Sep 20 14:43 vim-pytedrwxr-xr-x   4 rlaney  staff   136B Sep 20 14:43 vim-repeatdrwxr-xr-x   4 rlaney  staff   136B Sep 20 14:43 vim-sensibledrwxr-xr-x  14 rlaney  staff   476B Sep 20 14:43 vim-snipmatedrwxr-xr-x  13 rlaney  staff   442B Sep 20 14:43 vim-snippetsdrwxr-xr-x   6 rlaney  staff   204B Sep 20 14:43 vim-surrounddrwxr-xr-x   7 rlaney  staff   238B Sep 20 14:43 vim-virtualenvdrwxr-xr-x   4 rlaney  staff   136B Sep 20 14:43 vim-zenroom2drwxr-xr-x   8 rlaney  staff   272B Sep 20 14:43 vimwikidrwxrwxrwx   4 rlaney  staff   136B Sep 10 15:41 yankringdrwxrwxrwx  13 rlaney  staff   442B Sep 10 15:41 zencodingrlaney@MonsterMacBook:~/.vim/bundle|,v
+https://github.com/jmcantrell/vim-virtualenv.git,v
+",v
+let g:airline_theme="bubblegum",V
+/Users/rlaney/temp/newmaps,v
+'~/.vim/bundle/{}',v
+execute,v
+execute pathogen#helptags(),V
+execute pathogen#infect('~/.vim/bundle/{}'),V
+call,v
+Opmantek Project,v
+/Users/rlaney/Dropbox (Hearst Corporation)/opmantek project/WeatherMaps/Hearst Magazines/SFNY,v
+/Users/rlaney/Dropbox (Hearst Corporation)/opmantek project/WeatherMaps/Hearst Television/East/WAPT/WBAL-LAN/Users/rlaney/Dropbox (Hearst Corporation)/opmantek project/WeatherMaps/Hearst Television/East/WAPT/WBAL-TV-NG,v
+killall Dock,V
+defaults write com.apple.dock no-glass -boolean NO,V
+mkdir ATUcp ATU.png ATU/ATU.png,v
+highlight Visual guibg=DarkGreyhighlight Search guibg=DarkGrey guifg=white,V
+YES,v
+Stuff,v
+defaults write com.apple.dock no-glass -boolean YESkillall Dock,v
+peeknoc:/opt/omd/sites/noc/local/share/nagvis/htdocs/userfiles/images/maps #,v
+Alias /noc/nagvis/local "/omd/sites/noc/local/share/nagvis/htdocs"Alias /noc/nagvis/var "/omd/sites/noc/tmp/nagvis/share"Alias /noc/nagvis "/omd/sites/noc/share/nagvis/htdocs",v
+ssh noc@206.225.148.59,v
+# remap prefix to Control + aset -g prefix C-a# bind 'C-a C-a' to type 'C-a'bind C-a send-prefixunbind C-b,v
+setw -g mode-keys vi,v
+# Cleanup# Run as root, of course.,v
+ZynxHealth12182012.png,v
+WomensDayKitchen.png,v
+NatLoop.gif,v
+WYFF-TV-NG11.12.13.png,v
+WYFF-LAN-Nexus.png,v
+WXIITVNG10152013.png,v
+WXIILAN_040115R3.png,v
+WVTM-WAN.png,v
+WVTM-LAN-3-27-2015.png,v
+WTAE-TV-NG.png,v
+WTAE_LAN_9_29_2014.png,v
+WRHF.png,v
+WPTZC-TV-NG.png,v
+WPTZ-TV-NG.png,v
+WPTZPlattsburgh-LAN-9-13-12.png,v
+WPTZC-LAN.png,v
+WPBF-TV-NG.png,v
+WPBF-LAN-NEXUS_7_20_15.png,v
+WNNE-NG.png,v
+WNNE-LAN.png,v
+WNB-LAN_02-04-2014.png,v
+WNB-TV-NG_02-11-2014.png,v
+WMURTVNG_1-17-2014.png,v
+WMUR-LAN-NEXUS_07_29_15.png,v
+WMTW_TV_W_NG09_25_2014.png,v
+WMTW-W_LAN_022015.png,v
+WMTW_A_LAN_06202014.png,v
+WMTW-A-NG_11-15-2013.png,v
+WMOR-NG-121713.png,v
+WMOR-LAN-10172012v3.png,v
+WLWTNGWAN111913.png,v
+WLWT-LAN-110713.png,v
+WLKYTVNG05132013.png,v
+WLKY-LAN-7-21-2015.png,v
+WJCL-WAN2.png,v
+WJCL_LAN_3_11_2015.png,v
+WISNTVNG07152013.png,v
+WISN-LAN-07232014.png,v
+WGAL-NG-06112013.png,v
+WGAL-LAN-3-24-2015.png,v
+WESH-TV-NG03102014.png,v
+WESHv6.png,v
+WDSU-TV-NG10022013.png,v
+WDSULAN7.14.2014.png,v
+LocalEdge.png,v
+WCVB-NG-111913.png,v
+WCVB-LAN-Nexus092513.png,v
+WBAL-TV-NG-01082014.png,v
+WBAL-LAN-NEXUS09042014.png,v
+WAPT-NG-WAN.png,v
+WAPT-LAN-8-24-2015.png,v
+US.png,v
+Blank.png,v
+sheffield.png,v
+SeattleMediaLLC12-18-2011.png,v
+SMON_3-22-13.png,v
+SterlingForestNEW.png,v

@@ -1,0 +1,68 @@
+ack.vim ack.vim
+ag.vim ag.vim
+base16-vim base16-vim
+bufexplorer bufexplorer
+ctrlp.vim ctrlp.vim
+goyo.vim goyo.vim
+gruvbox gruvbox
+mayansmoke mayansmoke
+nerdtree nerdtree
+nginx.vim nginx.vim
+open_file_under_cursor.vim open_file_under_cursor.vim
+peaksea peaksea
+python-mode python-mode
+snipmate-snippets snipmate-snippets
+syntastic syntastic
+tComment
+tlib tlib
+vim-addon-mw-utils vim-addon-mw-utils
+vim-airline vim-airline
+vim-bundle-mako vim-bundle-mako
+vim-bundler
+vim-coffee-script vim-coffee-script
+vim-colors-solarized vim-colors-solarized
+vim-commentary vim-commentary
+vim-endwise
+vim-eunuch
+vim-expand-region vim-expand-region
+vim-fugitive vim-fugitive
+vim-gitgutter vim-gitgutter
+vim-go vim-go
+vim-indent-object vim-indent-object
+vim-irblack vim-irblack
+vim-less vim-less
+vim-markdown vim-markdown
+vim-mkdir
+vim-multiple-cursors vim-multiple-cursors
+vim-projectionist
+vim-pyte vim-pyte
+vim-rails
+vim-rake
+vim-repeat vim-repeat
+vim-rsi vim-rsi
+vim-ruby
+vim-run-interactive
+vim-sensible vim-sensible
+vim-snipmate vim-snipmate
+vim-snippets vim-snippets
+vim-surround vim-surround
+vim-virtualenv vim-virtualenv
+vim-zenroom2 vim-zenroom2
+vimwiki vimwiki
+
+tComment https://github.com/vim-scripts/tComment
+vim-bundler https://github.com/tpope/vim-bundler
+vim-endwise https://github.com/tpope/vim-endwise
+vim-eunuch https://github.com/tpope/vim-eunuch
+vim-mkdir https://github.com/pbrisbin/vim-mkdir
+vim-jdaddy https://github.com/tpope/vim-jdaddy
+vim-rvm https://github.com/tpope/vim-rvm
+vim-rbenv https://github.com/tpope/vim-rbenv
+vim-rails https://github.com/tpope/vim-rails
+vim-rake https://github.com/tpope/vim-rake
+vim-ruby https://github.com/vim-ruby/vim-ruby
+vim-tbone https://github.com/tpope/vim-tbone
+vim-dotenv https://github.com/tpope/vim-dotenv
+ruby-icloud https://github.com/adammck/ruby-icloud
+rbenv-aliases https://github.com/tpope/rbenv-aliases
+rbenv-ctags https://github.com/tpope/rbenv-ctags
