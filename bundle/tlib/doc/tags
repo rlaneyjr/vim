@@ -3,6 +3,7 @@
 :TLet	tlib.txt	/*:TLet*
 :TScratch	tlib.txt	/*:TScratch*
 :TVarArg	tlib.txt	/*:TVarArg*
+:Tlibassert	tlib.txt	/*:Tlibassert*
 :Tlibtrace	tlib.txt	/*:Tlibtrace*
 :Tlibtraceset	tlib.txt	/*:Tlibtraceset*
 Add()	tlib.txt	/*Add()*
@@ -143,7 +144,13 @@ tlib#arg#GetOpts()	tlib.txt	/*tlib#arg#GetOpts()*
 tlib#arg#Let()	tlib.txt	/*tlib#arg#Let()*
 tlib#arg#StringAsKeyArgs()	tlib.txt	/*tlib#arg#StringAsKeyArgs()*
 tlib#arg#StringAsKeyArgsEqual()	tlib.txt	/*tlib#arg#StringAsKeyArgsEqual()*
+tlib#assert#All()	tlib.txt	/*tlib#assert#All()*
+tlib#assert#Assert()	tlib.txt	/*tlib#assert#Assert()*
+tlib#assert#Disable()	tlib.txt	/*tlib#assert#Disable()*
+tlib#assert#Enable()	tlib.txt	/*tlib#assert#Enable()*
+tlib#assert#Map()	tlib.txt	/*tlib#assert#Map()*
 tlib#autocmdgroup#Init()	tlib.txt	/*tlib#autocmdgroup#Init()*
+tlib#balloon#Expand()	tlib.txt	/*tlib#balloon#Expand()*
 tlib#balloon#Expr()	tlib.txt	/*tlib#balloon#Expr()*
 tlib#balloon#Register()	tlib.txt	/*tlib#balloon#Register()*
 tlib#balloon#Remove()	tlib.txt	/*tlib#balloon#Remove()*
@@ -195,6 +202,8 @@ tlib#cmd#Time()	tlib.txt	/*tlib#cmd#Time()*
 tlib#cmd#UseVertical()	tlib.txt	/*tlib#cmd#UseVertical()*
 tlib#comments#Comments()	tlib.txt	/*tlib#comments#Comments()*
 tlib#date#DiffInDays()	tlib.txt	/*tlib#date#DiffInDays()*
+tlib#date#Format()	tlib.txt	/*tlib#date#Format()*
+tlib#date#IsDate()	tlib.txt	/*tlib#date#IsDate()*
 tlib#date#Parse()	tlib.txt	/*tlib#date#Parse()*
 tlib#date#SecondsSince1970()	tlib.txt	/*tlib#date#SecondsSince1970()*
 tlib#date#Shift()	tlib.txt	/*tlib#date#Shift()*
@@ -326,11 +335,16 @@ tlib#time#DiffMSecs()	tlib.txt	/*tlib#time#DiffMSecs()*
 tlib#time#FormatNow()	tlib.txt	/*tlib#time#FormatNow()*
 tlib#time#MSecs()	tlib.txt	/*tlib#time#MSecs()*
 tlib#time#Now()	tlib.txt	/*tlib#time#Now()*
+tlib#trace#Backtrace()	tlib.txt	/*tlib#trace#Backtrace()*
 tlib#trace#Disable()	tlib.txt	/*tlib#trace#Disable()*
 tlib#trace#Enable()	tlib.txt	/*tlib#trace#Enable()*
 tlib#trace#Print()	tlib.txt	/*tlib#trace#Print()*
 tlib#trace#PrintToFile()	tlib.txt	/*tlib#trace#PrintToFile()*
 tlib#trace#Set()	tlib.txt	/*tlib#trace#Set()*
+tlib#type#Are()	tlib.txt	/*tlib#type#Are()*
+tlib#type#Has()	tlib.txt	/*tlib#type#Has()*
+tlib#type#Have()	tlib.txt	/*tlib#type#Have()*
+tlib#type#Is()	tlib.txt	/*tlib#type#Is()*
 tlib#type#IsDictionary()	tlib.txt	/*tlib#type#IsDictionary()*
 tlib#type#IsFuncref()	tlib.txt	/*tlib#type#IsFuncref()*
 tlib#type#IsList()	tlib.txt	/*tlib#type#IsList()*

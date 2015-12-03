@@ -62,6 +62,7 @@ vim-snipmate https://github.com/garbas/vim-snipmate
 vim-snippets https://github.com/honza/vim-snippets
 vim-surround https://github.com/tpope/vim-surround
 vim-tbone https://github.com/tpope/vim-tbone
+vim-tmux-navigator https://github.com/christoomey/vim-tmux-navigator
 vim-virtualenv https://github.com/jmcantrell/vim-virtualenv
 vim-zenroom2 https://github.com/amix/vim-zenroom2
 vimwiki https://github.com/vim-scripts/vimwiki
