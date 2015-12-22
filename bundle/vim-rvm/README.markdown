@@ -36,24 +36,13 @@ reflect the nearest `.ruby-version` file.
 
 [vim-ruby]: https://github.com/vim-ruby/vim-ruby
 
-## Installation
-
-If you don't have a preferred installation method, I recommend
-installing [pathogen.vim](https://github.com/tpope/vim-pathogen), and
-then simply copy and paste:
-
-    cd ~/.vim/bundle
-    git clone git://github.com/tpope/vim-rvm.git
-
-Once help tags have been generated, you can view the manual with
-`:help rvm`.
-
 ## FAQ
 
 > RVM doesn't work in my Vim.
 
-You're using zsh on OS X, aren't you?  Move that stupid `/etc/zshenv`
-to `/etc/zshrc`.
+You're using zsh on OS X Yosemite or earlier, aren't you?  Move that stupid
+`/etc/zshenv` to `/etc/zprofile`, which is where it correctly lives on El
+Capitan.
 
 ## Self-Promotion
 

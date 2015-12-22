@@ -32,7 +32,7 @@ list() {
 
 cleanup_invalid() {
   local version
-  for version in *; do
+  for version in ${1:-*}; do
     if [ -L $version -a ! -e "$(resolve_link $version)" ]; then
       echo "Removing invalid link from $version to $(resolve_link $version)"
       rm $version
@@ -54,9 +54,19 @@ echo_lines_without_symlinks() {
   done
 }
 
+sort_versions() {
+  local patch_start_point
+
+  case "$1" in
+    *.*.*) patch_start_point=$((${#1} + 3)) ;; # point_release string length + 1 (0 indexed) + 2 for `-p` separator
+    *.*)   patch_start_point=$((${#1} + 2)) ;; # point_release string length + 1 (0 indexed) + 1 for `.` separator
+  esac
+
+  sort -n -k "1.$patch_start_point"
+}
+
 auto_for_point() {
-  local highest="$(echo_lines_without_symlinks $1*|sort -n|tail -1)"
-  echo "$highest"
+  echo_lines_without_symlinks $1* | sort_versions "$1" | tail -1
 }
 
 auto_symlink_point() {
@@ -70,14 +80,15 @@ auto_symlink_point() {
 }
 
 point_releases() {
-  # 1.9.3-p123
-  echo_lines_without_symlinks *.*.*-*|sed -e 's/-.*//'|sort -u
+  echo_lines_without_symlinks *.*.* | sed -e 's/\.[^-.]*$//' -e 's/-[^.]*$//' | sort -u
+}
 
-  # jruby-1.7.3
-  echo_lines_without_symlinks *-*.*.*|sed -e 's/\.[0-9]\+$//'|sort -u
-
-  # 2.1.4
-  echo_lines_without_symlinks [0-9].[0-9].[0-9]|sed -e 's/\.[0-9]\+$//'|sort -u
+abort() {
+  { if [ "$#" -eq 0 ]; then cat -
+    else echo "rbenv-alias: $*"
+    fi
+  } >&2
+  exit 1
 }
 
 # Provide rbenv completions
@@ -99,32 +110,18 @@ case "$#" in
 
   2)
     case "$1" in --*)
-      case "$2" in -*)
-        rbenv-help --usage alias >&2;
-        exit 1
-        ;;
-      esac
+      case "$2" in -*) abort < <(rbenv-help --usage alias) ;; esac
       exec rbenv-alias "$2" "$1" ;;
     esac
-    if [ -e "$1" -a ! -L "$1" ]; then
-      echo "Not clobbering $1" >&2
-      exit 1
+    if [ -e "$1" -a ! -L "$1" ]; then abort "Not clobbering $1"
     elif [ --remove = "$2" ]; then
-      if [ -L "$1" ]; then
-        rm "$1"
-      else
-        echo "No such alias $1" >&2
-        exit 1
+      if [ -L "$1" ]; then rm "$1"
+      else abort "No such alias $1"
       fi
     elif [ --auto = "$2" ]; then
       case "$1" in
-        *.*.*)
-          auto_symlink_point "$1"
-          ;;
-        *)
-          echo "Don't know how to automatically alias $1" >&2
-          exit 1
-          ;;
+        *.*) cleanup_invalid "$1" && auto_symlink_point "$1" ;;
+        *) abort "Don't know how to automatically alias $1" ;;
       esac
     else
       echo "$1 => $2"
@@ -147,31 +144,18 @@ case "$#" in
         exec rbenv-help alias
         ;;
       -*)
-        rbenv-help --usage alias >&2
-        exit 1
+        abort < <(rbenv-help --usage alias)
         ;;
       *)
-        if [ -L "$1" ]; then
-          readlink "$1"
-        elif [ -d "$1" ]; then
-          echo "$1 is an install, not an alias" >&2
-          exit 1
-        elif [ -e "$1" ]; then
-          echo "$1 exists but is not an alias" >&2
-          exit 1
-        else
-          echo "$1 does not exist" >&2
-          exit 1
+        if [ -L "$1" ]; then readlink "$1"
+        elif [ -d "$1" ]; then abort "$1 is an install, not an alias"
+        elif [ -e "$1" ]; then abort "$1 exists but is not an alias"
+        else abort "$1 does not exist"
         fi
     esac
     ;;
 
-  0)
-    list
-    ;;
+  0) list ;;
 
-  *)
-    rbenv-help --usage alias >&2
-    exit 1
-    ;;
+  *) abort < <(rbenv-help --usage alias) ;;
 esac

@@ -11,6 +11,7 @@ if [ "$RBENV_ROOT" != "${RBENV_TEST_DIR}/root" ]; then
   local parent
 
   export INSTALL_HOOK="${BATS_TEST_DIRNAME}/../etc/rbenv.d/install/autoalias.bash"
+  export UNINSTALL_HOOK="${BATS_TEST_DIRNAME}/../etc/rbenv.d/uninstall/autoalias.bash"
 
   PATH=/usr/bin:/bin:/usr/sbin:/sbin
   PATH="${RBENV_TEST_DIR}/bin:$PATH"
@@ -46,6 +47,14 @@ create_versions() {
   done
 }
 
+# Creates test aliases
+create_alias() {
+  local alias="$1"
+  local version="$2"
+
+  mkdir -p "$RBENV_ROOT/versions"
+  ln -nfs "$RBENV_ROOT/versions/$version" "$RBENV_ROOT/versions/$alias"
+}
 
 # assert_alias_version alias version
 
@@ -55,13 +64,13 @@ assert_alias_version() {
     echo "Versions:"
     (cd $RBENV_ROOT/versions ; ls -l)
   fi
-  assert_equal "$2" `cat $RBENV_ROOT/versions/$1/RELEASE.txt 2>&1`
+  assert_equal "$2" "$(cat "$RBENV_ROOT/versions/$1/RELEASE.txt" 2>&1)"
 }
 
 assert_alias_missing() {
   if [ -f $RBENV_ROOT/versions/$1/RELEASE.txt ]
   then
-    assert_equal "no-version" `cat $RBENV_ROOT/versions/$1/RELEASE.txt 2>&1`
+    assert_equal "no-version" "$(cat "$RBENV_ROOT/versions/$1/RELEASE.txt" 2>&1)"
   fi
 }
 
