@@ -13,6 +13,7 @@ ag.vim https://github.com/rking/ag.vim
 base16-vim https://github.com/chriskempson/base16-vim
 bufexplorer https://github.com/corntrace/bufexplorer
 ctrlp.vim https://github.com/kien/ctrlp.vim
+dash.vim https://github.com/rizzatti/dash.vim
 goyo.vim https://github.com/junegunn/goyo.vim
 gruvbox https://github.com/morhetz/gruvbox
 mayansmoke https://github.com/vim-scripts/mayansmoke
