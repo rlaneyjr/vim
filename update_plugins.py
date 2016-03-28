@@ -30,7 +30,8 @@ syntastic https://github.com/scrooloose/syntastic
 tComment https://github.com/vim-scripts/tComment
 tlib https://github.com/vim-scripts/tlib
 vim-addon-mw-utils https://github.com/MarcWeber/vim-addon-mw-utils
-vim-airline https://github.com/bling/vim-airline
+vim-airline https://github.com/vim-airline/vim-airline
+vim-airline-themes https://github.com/vim-airline/vim-airline-themes
 vim-bundle-mako https://github.com/sophacles/vim-bundle-mako
 vim-bundler https://github.com/tpope/vim-bundler
 vim-coffee-script https://github.com/kchmck/vim-coffee-script
