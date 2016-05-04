@@ -3,6 +3,7 @@ Updated ag.vim
 Updated base16-vim
 Updated bufexplorer
 Updated ctrlp.vim
+Updated dash.vim
 Updated goyo.vim
 Updated gruvbox
 Updated mayansmoke
@@ -20,6 +21,7 @@ Updated tComment
 Updated tlib
 Updated vim-addon-mw-utils
 Updated vim-airline
+Updated vim-airline-themes
 Updated vim-bundle-mako
 Updated vim-bundler
 Updated vim-coffee-script

@@ -218,9 +218,12 @@ function! multiple_cursors#find(start, end, pattern)
   let first = 1
   while 1
     if first
+      " Set `virtualedit` to 'onemore' for the first search to consistently
+      " match patterns like '$'
+      let saved_virtualedit = &virtualedit
+      let &virtualedit = "onemore"
       " First search starts from the current position
       let match = search(a:pattern, 'cW')
-      let first = 0
     else
       let match = search(a:pattern, 'W')
     endif
@@ -228,9 +231,26 @@ function! multiple_cursors#find(start, end, pattern)
       break
     endif
     let left = s:pos('.')
-    call search(a:pattern, 'ceW')
+    " Perform an intermediate backward search to correctly match patterns like
+    " '^' and '$'
+    let match = search(a:pattern, 'bceW')
     let right = s:pos('.')
+    " Reset the cursor and perform a normal search if the intermediate search
+    " wasn't successful
+    if !match || s:compare_pos(right, left) != 0
+      call cursor(left)
+      call search(a:pattern, 'ceW')
+      let right = s:pos('.')
+    endif
+    if first
+      let &virtualedit = saved_virtualedit
+      let first = 0
+    endif
     if s:compare_pos(right, pos2) > 0
+      " Position the cursor at the end of the previous match so it'll be on a
+      " virtual cursor when multicursor mode is started. The `winrestview()`
+      " call below 'undoes' unnecessary repositionings
+      call search(a:pattern, 'be')
       break
     endif
     call s:cm.add(right, [left, right])
@@ -866,7 +886,8 @@ function! s:process_user_input()
   " Grr this is frustrating. In Insert mode, between the feedkey call and here,
   " the current position could actually CHANGE for some odd reason. Forcing a
   " position reset here
-  call cursor(s:cm.get_current().position)
+  let cursor_position = s:cm.get_current()
+  call cursor(cursor_position.position)
 
   " Before applying the user input, we need to revert back to the mode the user
   " was in when the input was entered
@@ -874,13 +895,14 @@ function! s:process_user_input()
 
   " Update the line length BEFORE applying any actions. TODO(terryma): Is there
   " a better place to do this?
-  call s:cm.get_current().update_line_length()
+  " let cursor_position = s:cm.get_current()
+  call cursor_position.update_line_length()
   let s:saved_linecount = line('$')
 
   " Restore unnamed register only in Normal mode. This should happen before user
   " input is processed.
   if s:from_mode ==# 'n' || s:from_mode ==# 'v' || s:from_mode ==# 'V'
-    call s:cm.get_current().restore_unnamed_register()
+    call cursor_position.restore_unnamed_register()
   endif
 
   " Apply the user input. Note that the above could potentially change mode, we

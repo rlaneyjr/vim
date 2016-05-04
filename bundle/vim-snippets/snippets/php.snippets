@@ -218,6 +218,18 @@ snippet interface
 	{
 		${0}
 	}
+# Trait
+snippet trait
+	/**
+	 * ${2:undocumented class}
+	 *
+	 * @package ${3:default}
+	 * @author ${4:`g:snips_author`}
+	 */
+	trait ${1:`vim_snippets#Filename()`}
+	{
+		${0}
+	}
 # class ...
 snippet class
 	/**
@@ -325,7 +337,7 @@ snippet foreachkil
 		${0:<!-- html... -->}
 	<?php endforeach; ?>
 # $... = array (...)
-snippet array
+snippet array b
 	$${1:arrayName} = array('${2}' => ${3});
 snippet try
 	try {
