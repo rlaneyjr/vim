@@ -68,11 +68,12 @@ vim-tmux-navigator https://github.com/christoomey/vim-tmux-navigator
 vim-virtualenv https://github.com/jmcantrell/vim-virtualenv
 vim-zenroom2 https://github.com/amix/vim-zenroom2
 vimwiki https://github.com/vim-scripts/vimwiki
+seti.vim https://github.com/trusktr/seti.vim
 """.strip()
 
 GITHUB_ZIP = '%s/archive/master.zip'
 
-SOURCE_DIR = path.join(path.dirname(__file__), 'bundle')
+SOURCE_DIR = path.join(path.dirname(__file__), 'plugged')
 
 
 def download_extract_replace(plugin_name, zip_path, temp_dir, source_dir):
