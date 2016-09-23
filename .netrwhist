@@ -1,5 +1,6 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =3
-let g:netrw_dirhist_1='/Users/rlaney/.oh-my-zsh'
-let g:netrw_dirhist_2='/Users/rlaney/.oh-my-zsh/themes'
-let g:netrw_dirhist_3='/Users/rlaney/Projects/ansible-examples/parallax/playbooks/example/roles'
+let g:netrw_dirhist_cnt =4
+let g:netrw_dirhist_1='/usr/local/Cellar/macvim/8.0-110/MacVim.app/Contents/Resources/vim/runtime/autoload'
+let g:netrw_dirhist_2='/Users/rlaney/cheaters/cheaters/PythonLife'
+let g:netrw_dirhist_3='/Users/rlaney/cheaters/cheaters'
+let g:netrw_dirhist_4='/Users/rlaney/.dotfiles/heroku/.heroku'
