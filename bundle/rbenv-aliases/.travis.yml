@@ -1,3 +1,0 @@
-script: test/run
-# skips unnecessary Ruby-specific setup
-language: c
