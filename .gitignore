@@ -38,7 +38,3 @@ compile-cache
 dev
 .npm
 .node-gyp
-
-backups/*
-swaps/*
-undo/*
