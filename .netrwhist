@@ -1,4 +1,5 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =2
-let g:netrw_dirhist_1='/Users/rlaney/Dropbox (Personal)/NetEngOne/NetEngWORK/Opmantek/dc4-master/var'
-let g:netrw_dirhist_2='/Users/rlaney/Dropbox (Personal)/NetEngOne/NetEngWORK/Opmantek/dc4-master'
+let g:netrw_dirhist_cnt =3
+let g:netrw_dirhist_1='/Users/rlaney/temp/now/live/back'
+let g:netrw_dirhist_2='/Users/rlaney/Dropbox (Personal)/MyDocs/WORK/Netscaler/var-netscaler-gui'
+let g:netrw_dirhist_3='/Users/rlaney/Dropbox (Personal)/MyDocs/WORK/Netscaler/var-netscaler-gui/vpn'
