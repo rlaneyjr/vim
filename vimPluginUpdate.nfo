@@ -1,3 +1,4 @@
+Updated FastFold
 Updated ack.vim
 Updated ag.vim
 Updated base16-vim
@@ -5,6 +6,7 @@ Updated bufexplorer
 Updated ctrlp.vim
 Updated dash.vim
 Updated goyo.vim
+Updated molokai
 Updated nerdtree
 Updated nginx.vim
 Updated open_file_under_cursor.vim
@@ -12,15 +14,19 @@ Updated python-mode
 Updated rbenv-aliases
 Updated rbenv-ctags
 Updated ruby-icloud
+Updated seti.vim
 Updated tComment
 Updated tlib
 Updated vim-addon-mw-utils
+Updated vim-airline
+Updated vim-airline-themes
 Updated vim-bundle-mako
 Updated vim-bundler
 Updated vim-coffee-script
 Updated vim-colors-solarized
 Updated vim-commentary
 Updated vim-dotenv
+Updated vim-easy-align
 Updated vim-endwise
 Updated vim-eunuch
 Updated vim-expand-region
@@ -32,9 +38,7 @@ Updated vim-irblack
 Updated vim-jdaddy
 Updated vim-less
 Updated vim-markdown
-Updated vim-mkdir
 Updated vim-multiple-cursors
-Updated vim-pyte
 Updated vim-rails
 Updated vim-rake
 Updated vim-rbenv
@@ -42,7 +46,6 @@ Updated vim-repeat
 Updated vim-rsi
 Updated vim-ruby
 Updated vim-rvm
-Updated vim-snipmate
 Updated vim-snippets
 Updated vim-surround
 Updated vim-tbone
@@ -50,6 +53,3 @@ Updated vim-tmux-navigator
 Updated vim-virtualenv
 Updated vim-zenroom2
 Updated vimwiki
-Updated seti.vim
-Updated vim-easy-align
-Updated molokai
