@@ -1,7 +1,8 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =5
+let g:netrw_dirhist_cnt =6
 let g:netrw_dirhist_1='/Users/rlaney/temp/now/live/back'
 let g:netrw_dirhist_2='/Users/rlaney/Dropbox (Personal)/MyDocs/WORK/Netscaler/var-netscaler-gui'
 let g:netrw_dirhist_3='/Users/rlaney/Dropbox (Personal)/MyDocs/WORK/Netscaler/var-netscaler-gui/vpn'
 let g:netrw_dirhist_4='/private/var/folders/c3/rpgq1nb94jg12frkmyj4tsjh0000gn/T/hsperfdata_rlaney'
 let g:netrw_dirhist_5='/Users/rlaney/Projects/ansible/roles/bootstrap/tasks'
+let g:netrw_dirhist_6='/Users/rlaney/.ssh'
