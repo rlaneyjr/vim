@@ -1,5 +1,5 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =8
+let g:netrw_dirhist_cnt =9
 let g:netrw_dirhist_1='/Users/rlaney/temp/now/live/back'
 let g:netrw_dirhist_2='/Users/rlaney/Dropbox (Personal)/MyDocs/WORK/Netscaler/var-netscaler-gui'
 let g:netrw_dirhist_3='/Users/rlaney/Dropbox (Personal)/MyDocs/WORK/Netscaler/var-netscaler-gui/vpn'
@@ -8,3 +8,4 @@ let g:netrw_dirhist_5='/Users/rlaney/Projects/ansible/roles/bootstrap/tasks'
 let g:netrw_dirhist_6='/Users/rlaney/.ssh'
 let g:netrw_dirhist_7='/Users/rlaney/Projects/VIRL_Projects'
 let g:netrw_dirhist_8='/Users/rlaney/Projects/het-ansible/ansible-snmp-facts'
+let g:netrw_dirhist_9='/Users/rlaney/Projects/het-ansible/RUN'
