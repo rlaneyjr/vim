@@ -63,6 +63,7 @@ vim-tmux-navigator https://github.com/christoomey/vim-tmux-navigator
 vim-virtualenv https://github.com/jmcantrell/vim-virtualenv
 vim-zenroom2 https://github.com/amix/vim-zenroom2
 vimwiki https://github.com/vim-scripts/vimwiki
+vim-template https://github.com/aperezdc/vim-template
 """.strip()
 
 # Removed plugins
