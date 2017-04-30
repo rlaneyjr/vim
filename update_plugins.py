@@ -63,24 +63,19 @@ vim-tmux-navigator https://github.com/christoomey/vim-tmux-navigator
 vim-virtualenv https://github.com/jmcantrell/vim-virtualenv
 vim-zenroom2 https://github.com/amix/vim-zenroom2
 vimwiki https://github.com/vim-scripts/vimwiki
-vim-template https://github.com/aperezdc/vim-template
 """.strip()
 
 # Removed plugins
-'''
 #gruvbox https://github.com/morhetz/gruvbox
 #mayansmoke https://github.com/vim-scripts/mayansmoke
 #peaksea https://github.com/vim-scripts/peaksea
 #snipmate-snippets https://github.com/scrooloose/snipmate-snippets
-#snipmate-snippets https://github.com/scrooloose/snipmate-snippets
-#syntastic https://github.com/scrooloose/syntastic
 #syntastic https://github.com/scrooloose/syntastic
 #vim-mkdir https://github.com/pbrisbin/vim-mkdir
 #vim-pyte https://github.com/therubymug/vim-pyte
 #vim-sensible https://github.com/tpope/vim-sensible
-#vim-sensible https://github.com/tpope/vim-sensible
 #vim-snipmate https://github.com/garbas/vim-snipmate
-'''
+#vim-template https://github.com/aperezdc/vim-template
 
 GITHUB_ZIP = '%s/archive/master.zip'
 
