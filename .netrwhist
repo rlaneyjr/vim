@@ -1,5 +1,5 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =8
+let g:netrw_dirhist_cnt =9
 let g:netrw_dirhist_1='/Users/rlaney/Dropbox (Personal)/MyDocs/WORK/DMVPN/WCVB-AP-Controller-Setup'
 let g:netrw_dirhist_2='/Users/rlaney/repos/KennethReitz'
 let g:netrw_dirhist_3='/Users/rlaney/repos/KennethReitz/docker-python'
@@ -8,3 +8,4 @@ let g:netrw_dirhist_5='/Users/rlaney/Projects/het-ansible/inventory/htv/switches
 let g:netrw_dirhist_6='/Users/rlaney/scripts'
 let g:netrw_dirhist_7='/Users/rlaney/scripts/linux'
 let g:netrw_dirhist_8='/Users/rlaney/coreos-osx/tmp'
+let g:netrw_dirhist_9='/Users/rlaney/repos/VIRL/virl-utils/BYOS-scripts'
