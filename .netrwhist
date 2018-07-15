@@ -1,2 +1,6 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =0
+let g:netrw_dirhist_cnt =4
+let g:netrw_dirhist_1='/Users/rlaney/.virtualenvs/het-ansible2-zLGvQ4_t/lib/python3.6/site-packages/netaddr'
+let g:netrw_dirhist_2='/Users/rlaney/.virtualenvs/het-ansible2-zLGvQ4_t/lib/python3.6/site-packages/netaddr/contrib'
+let g:netrw_dirhist_3='/Users/rlaney/.virtualenvs/het-ansible2-zLGvQ4_t/lib/python3.6/site-packages/netaddr'
+let g:netrw_dirhist_4='/Users/rlaney/.virtualenvs/het-ansible2-zLGvQ4_t/lib/python3.6/site-packages/netaddr/ip'
