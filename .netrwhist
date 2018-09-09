@@ -1,8 +1,9 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =6
+let g:netrw_dirhist_cnt =7
 let g:netrw_dirhist_1='/Users/rlaney/.virtualenvs/het-ansible2-zLGvQ4_t/lib/python3.6/site-packages/netaddr'
 let g:netrw_dirhist_2='/Users/rlaney/.virtualenvs/het-ansible2-zLGvQ4_t/lib/python3.6/site-packages/netaddr/contrib'
 let g:netrw_dirhist_3='/Users/rlaney/.virtualenvs/het-ansible2-zLGvQ4_t/lib/python3.6/site-packages/netaddr'
 let g:netrw_dirhist_4='/Users/rlaney/.virtualenvs/het-ansible2-zLGvQ4_t/lib/python3.6/site-packages/netaddr/ip'
 let g:netrw_dirhist_5='/Users/rlaney/.ipython/profile_rlaney'
 let g:netrw_dirhist_6='/Users/rlaney/.zprezto'
+let g:netrw_dirhist_7='/Users/rlaney/.virtualenvs/netmiko-YkO5AgJY/lib/python3.6/site-packages/netmiko'
