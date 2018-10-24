@@ -1,5 +1,6 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =3
+let g:netrw_dirhist_cnt =4
 let g:netrw_dirhist_1='/Users/rlaney/.virtualenvs/aws-netbox/lib/python3.7/site-packages/ServiceNowRac'
 let g:netrw_dirhist_2='/Users/rlaney/.virtualenvs/het-ansible2-zLGvQ4_t/lib/python3.6/site-packages/snowclient'
 let g:netrw_dirhist_3='/Users/rlaney/Projects/het-ansible2/src/apis'
+let g:netrw_dirhist_4='/Users/rlaney/.virtualenvs/hovercraft/lib/python3.7/site-packages/simple_server'
