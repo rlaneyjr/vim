@@ -6,7 +6,7 @@ import requests
 from os import path
 
 
-#--- Globals ----------------------------------------------
+# --- Globals ----------------------------------------------
 PLUGINS = """
 FastFold https://github.com/Konfekt/FastFold
 ack.vim https://github.com/mileszs/ack.vim
@@ -66,20 +66,20 @@ vimwiki https://github.com/vim-scripts/vimwiki
 """.strip()
 
 # Removed plugins
-#gruvbox https://github.com/morhetz/gruvbox
-#mayansmoke https://github.com/vim-scripts/mayansmoke
-#peaksea https://github.com/vim-scripts/peaksea
-#snipmate-snippets https://github.com/scrooloose/snipmate-snippets
-#syntastic https://github.com/scrooloose/syntastic
-#vim-mkdir https://github.com/pbrisbin/vim-mkdir
-#vim-pyte https://github.com/therubymug/vim-pyte
-#vim-sensible https://github.com/tpope/vim-sensible
-#vim-snipmate https://github.com/garbas/vim-snipmate
-#vim-template https://github.com/aperezdc/vim-template
+# gruvbox https://github.com/morhetz/gruvbox
+# mayansmoke https://github.com/vim-scripts/mayansmoke
+# peaksea https://github.com/vim-scripts/peaksea
+# snipmate-snippets https://github.com/scrooloose/snipmate-snippets
+# syntastic https://github.com/scrooloose/syntastic
+# vim-mkdir https://github.com/pbrisbin/vim-mkdir
+# vim-pyte https://github.com/therubymug/vim-pyte
+# vim-sensible https://github.com/tpope/vim-sensible
+# vim-snipmate https://github.com/garbas/vim-snipmate
+# vim-template https://github.com/aperezdc/vim-template
 
-GITHUB_ZIP = '%s/archive/master.zip'
+GITHUB_ZIP = "%s/archive/master.zip"
 
-SOURCE_DIR = path.join(path.dirname(__file__), 'plugged')
+SOURCE_DIR = path.join(path.dirname(__file__), "plugged")
 
 
 def download_extract_replace(plugin_name, zip_path, temp_dir, source_dir):
@@ -87,13 +87,14 @@ def download_extract_replace(plugin_name, zip_path, temp_dir, source_dir):
 
     # Download and extract file in temp dir
     req = requests.get(zip_path)
-    open(temp_zip_path, 'wb').write(req.content)
+    open(temp_zip_path, "wb").write(req.content)
 
     zip_f = zipfile.ZipFile(temp_zip_path)
     zip_f.extractall(temp_dir)
 
-    plugin_temp_path = path.join(temp_dir,
-                                 path.join(temp_dir, '%s-master' % plugin_name))
+    plugin_temp_path = path.join(
+        temp_dir, path.join(temp_dir, "%s-master" % plugin_name)
+    )
 
     # Remove the current plugin and replace it with the extracted
     plugin_dest_path = path.join(source_dir, plugin_name)
@@ -105,17 +106,16 @@ def download_extract_replace(plugin_name, zip_path, temp_dir, source_dir):
 
     shutil.move(plugin_temp_path, plugin_dest_path)
 
-    print('Updated {0}'.format(plugin_name))
+    print("Updated {0}".format(plugin_name))
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     temp_directory = tempfile.mkdtemp()
 
     try:
         for line in PLUGINS.splitlines():
-            name, github_url = line.split(' ')
+            name, github_url = line.split(" ")
             zip_path = GITHUB_ZIP % github_url
-            download_extract_replace(name, zip_path,
-                                     temp_directory, SOURCE_DIR)
+            download_extract_replace(name, zip_path, temp_directory, SOURCE_DIR)
     finally:
         shutil.rmtree(temp_directory)
