@@ -95,3 +95,24 @@ Temporary Items
 storage
 compile-cache
 dev
+
+# Specific to location "~/.vim"
+black
+
+!backups
+!backups/.gitkeep
+backups/**
+
+!plugged
+!plugged/.gitkeep
+!plugged/powerline.vim # Except this one!
+plugged/**
+
+!swaps
+!swaps/.gitkeep
+swaps/**
+
+!undo
+!undo/.gitkeep
+undo/**
+
