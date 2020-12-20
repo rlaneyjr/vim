@@ -1,5 +1,6 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =3
+let g:netrw_dirhist_cnt =4
 let g:netrw_dirhist_1='/opt/cisco/anyconnect/profile'
 let g:netrw_dirhist_2='/opt/cisco/anyconnect'
 let g:netrw_dirhist_3='/Volumes/T5-SSD/repos/orabuntu-lxc'
+let g:netrw_dirhist_4='/Users/rlaney/.virtualenvs/nettopo/lib/python3.8/site-packages/netmiko'
